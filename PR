@@ -1,0 +1,19 @@
+UPDATE alunos
+SET 
+    cidade = CASE ID
+        WHEN 15 THEN 'Astorga'
+        WHEN 16 THEN 'Astorga'
+        WHEN 19 THEN 'Astorga'
+        WHEN 20 THEN 'Astorga'
+        WHEN 21 THEN 'Astorga'
+        ELSE cidade
+    END,
+    Estado = CASE ID
+        WHEN 15 THEN 'PR'
+        WHEN 16 THEN 'PR'
+        WHEN 19 THEN 'PR'
+        WHEN 20 THEN 'PR'
+        WHEN 21 THEN 'PR'
+        ELSE Estado
+    END
+WHERE ID IN (15, 16, 19, 20, 21);
