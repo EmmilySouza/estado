@@ -1,0 +1,19 @@
+UPDATE alunos
+SET 
+    cidade = CASE ID
+        WHEN 2 THEN 'Morro do Jacaré'
+        WHEN 4 THEN 'Morro do Jacaré'
+        WHEN 9 THEN 'Morro do Jacaré'
+        WHEN 17 THEN 'Morro do Jacaré'
+        WHEN 27 THEN 'Morro do Jacaré'
+        ELSE cidade
+    END,
+    Estado = CASE ID
+        WHEN 2 THEN 'RJ'
+        WHEN 4 THEN 'RJ'
+        WHEN 9 THEN 'RJ'
+        WHEN 17 THEN 'RJ'
+        WHEN 27 THEN 'RJ'
+        ELSE Estado
+    END
+WHERE ID IN (2, 4, 9, 17, 27);
