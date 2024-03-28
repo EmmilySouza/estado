@@ -1,0 +1,4 @@
+SELECT * FROM `alunos` ORDER BY nome;
+SELECT * FROM `alunos` ORDER BY ID;
+SELECT * FROM `alunos` ORDER BY Estado;
+SELECT * FROM `alunos` ORDER BY idade;
