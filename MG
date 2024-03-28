@@ -1,0 +1,19 @@
+UPDATE alunos
+SET 
+    cidade = CASE ID
+        WHEN 4 THEN 'Uberlândia'
+        WHEN 5 THEN 'Uberlândia'
+        WHEN 6 THEN 'Uberlândia'
+        WHEN 12 THEN 'Uberlândia'
+        WHEN 13 THEN 'Uberlândia'
+        ELSE cidade
+    END,
+    Estado = CASE ID
+        WHEN 4 THEN 'MG'
+        WHEN 5 THEN 'MG'
+        WHEN 6 THEN 'MG'
+        WHEN 12 THEN 'MG'
+        WHEN 13 THEN 'MG'
+        ELSE Estado
+    END
+WHERE ID IN (4, 5, 6, 12, 13);
