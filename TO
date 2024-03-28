@@ -1,0 +1,29 @@
+UPDATE alunos
+SET 
+    cidade = CASE ID
+        WHEN 22 THEN 'Almas'
+        WHEN 23 THEN 'Almas'
+        WHEN 25 THEN 'Almas'
+        WHEN 26 THEN 'Almas'
+        WHEN 29 THEN 'Almas'
+        WHEN 30 THEN 'Almas'
+        WHEN 31 THEN 'Almas'
+        WHEN 32 THEN 'Almas'
+        WHEN 33 THEN 'Almas'
+        WHEN 34 THEN 'Almas'
+        ELSE cidade
+    END,
+    Estado = CASE ID
+        WHEN 22 THEN 'TO'
+        WHEN 23 THEN 'TO'
+        WHEN 25 THEN 'TO'
+        WHEN 26 THEN 'TO'
+        WHEN 29 THEN 'TO'
+        WHEN 30 THEN 'TO'
+        WHEN 31 THEN 'TO'
+        WHEN 32 THEN 'TO'
+        WHEN 33 THEN 'TO'
+        WHEN 34 THEN 'TO'
+        ELSE Estado
+    END
+WHERE ID IN (22, 23, 25, 26, 29, 30, 31, 32, 33, 34);
